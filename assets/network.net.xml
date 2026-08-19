@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-08-18T22:21:57.861305+09:00 by Eclipse SUMO netedit 1.27.1
+<!-- generated on 2026-08-19T21:57:23.078538+09:00 by Eclipse SUMO netedit 1.27.1
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
@@ -104,7 +104,7 @@
         <lane id=":J13_4_4" index="4" speed="13.89" length="21.88" shape="-1.11,-25.55 1.14,-3.39"/>
     </edge>
     <edge id=":J13_9" function="internal">
-        <lane id=":J13_9_0" index="0" speed="13.89" length="21.92" shape="-14.97,-3.03 -15.12,-7.00 -15.75,-11.70 -16.51,-17.51 -17.09,-24.83"/>
+        <lane id=":J13_9_0" index="0" speed="11.11" length="21.92" shape="-14.97,-3.03 -15.12,-7.00 -15.75,-11.70 -16.51,-17.51 -17.09,-24.83"/>
     </edge>
     <edge id=":J15_0" function="internal">
         <lane id=":J15_0_0" index="0" speed="8.80" length="13.90" shape="-12.46,163.32 -15.57,164.31 -17.96,166.30 -19.61,169.29 -20.54,173.29"/>
@@ -193,7 +193,7 @@
         <lane id=":J26_0_1" index="1" speed="13.89" length="16.12" shape="-8.03,57.48 -9.84,62.03 -11.09,65.15 -12.03,68.36 -12.89,73.15"/>
     </edge>
     <edge id=":J26_2" function="internal">
-        <lane id=":J26_2_0" index="0" speed="13.89" length="17.07" shape="-19.22,72.21 -18.12,66.76 -16.91,62.60 -15.95,59.09 -15.59,55.57"/>
+        <lane id=":J26_2_0" index="0" speed="11.11" length="17.07" shape="-19.22,72.21 -18.12,66.76 -16.91,62.60 -15.95,59.09 -15.59,55.57"/>
     </edge>
     <edge id=":J26_3" function="internal">
         <lane id=":J26_3_0" index="0" speed="13.89" length="17.13" shape="-16.06,72.68 -14.99,67.22 -13.73,63.11 -12.38,59.70 -11.02,56.36"/>
@@ -441,7 +441,7 @@
         <lane id="E28_1" index="1" speed="13.89" length="5.81" shape="-16.91,78.43 -16.06,72.68"/>
     </edge>
     <edge id="E29" from="J26" to="J13" priority="-1" shape="-13.79,68.28 -14.56,19.52 -12.93,-11.36 -2.61,-23.41">
-        <lane id="E29_0" index="0" speed="13.89" length="58.63" shape="-15.59,55.57 -16.16,19.49 -14.97,-3.03"/>
+        <lane id="E29_0" index="0" speed="8.33" length="58.63" shape="-15.59,55.57 -16.16,19.49 -14.97,-3.03"/>
     </edge>
     <edge id="E3" from="J4" to="J5" priority="-1">
         <lane id="E3_0" index="0" speed="13.89" length="9.51" shape="17.39,-137.75 19.21,-128.41"/>
