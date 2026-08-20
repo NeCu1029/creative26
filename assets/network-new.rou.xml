@@ -1,0 +1,8 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <vType id="car" accel="2.8" decel="6.5" sigma="0.5" length="5" maxSpeed="25" speedFactor="1.2" minGap="2" jmIgnoreKeepClearTime="0" jmDriveAfterRedTime="3.0" jmDriveAfterYellowTime="3.0" impatience="1.0" />
+  <flow id="F0" begin="0" end="3600" fromJunction="A" toJunction="B" number="2367" type="car" />
+  <flow id="F1" begin="0" end="3600" fromJunction="A" toJunction="C" number="1752" type="car" />
+  <flow id="F2" begin="0" end="3600" fromJunction="B" toJunction="A" number="1542" type="car" />
+  <flow id="F3" begin="0" end="3600" fromJunction="B" toJunction="C" number="45" type="car" />
+  <flow id="F4" begin="0" end="3600" fromJunction="C" toJunction="A" number="2121" type="car" />
+</routes>

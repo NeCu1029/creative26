@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="assets/network.net.xml"/>
-        <route-files value="assets/network.rou.xml"/>
+        <route-files value="assets/network-new.rou.xml"/>
         <junction-taz value="true"/>
     </input>
 
