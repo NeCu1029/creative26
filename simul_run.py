@@ -1,6 +1,8 @@
 import libsumo
 import xml.etree.ElementTree as et
+import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 
 SUMO_BINARY = "C:/Program Files (x86)/Eclipse/Sumo/bin/sumo"
 SUMOCFG_DIR = "current.sumocfg"
@@ -18,8 +20,8 @@ SUMO_CMD = [
 ]
 
 
-def simulation() -> list[int]:
-    res = []
+def simulation() -> tuple[list, float]:
+    times = []
     route_val = [int(flow.get("number")) for flow in ROOT.findall("flow")]  # type: ignore
 
     for rate in range(80, 160, 10):
@@ -27,19 +29,23 @@ def simulation() -> list[int]:
             flow.set("number", str(route_val[i] * rate // 100))
         TREE.write(ROUTE_DIR_NEW)
 
-        print(f"{rate}% 시뮬레이션 시작")
-
         libsumo.start(SUMO_CMD)
         time = 0
         while libsumo.simulation.getMinExpectedNumber() > 0:  # type: ignore
             libsumo.simulationStep()
             time += 1
         libsumo.close()
-        res.append(time)
+        times.append(time)
 
-    return res
+    x = np.array(range(80, 160, 10)).reshape(-1, 1)
+    y = np.array(times)
+    model = LinearRegression()
+    model.fit(x, y)
+
+    return times, model.coef_[0]  # type: ignore
 
 
-result = simulation()
-plt.scatter(range(80, 160, 10), result)
+times, res = simulation()
+print(res)
+plt.scatter(range(80, 160, 10), times)
 plt.show()
